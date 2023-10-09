@@ -1,0 +1,161 @@
+{% extends 'adminlte/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card card-danger">
+<div class="card-header">
+<h3 class="card-title">Наши Услуги</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+    <strong>FashionFusion предоставляет широкий спектр услуг, чтобы сделать ваше образование более стильным и удовлетворить ваши модные потребности. Наша команда профессиональных стилистов и дизайнеров готова помочь вам выразить свой стиль и достичь желаемого внешнего вида.</strong><br><br>
+<div class="row">
+<div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Персональный Стиль</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+Наши стилисты помогут вам создать уникальный и неповторимый облик, который подчеркнет вашу личность и удовлетворит ваши стилистические потребности. Мы предоставляем индивидуальные консультации, составление гардероба и помощь в выборе нарядов для особых случаев.
+</div>
+
+</div>
+
+</div>
+<div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Покупка С Умом</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+Наша команда экспертов по моде поможет вам сделать правильные выборы при покупке одежды и аксессуаров. Мы предлагаем персональные советы по шопингу, а также подбор лучших вещей, соответствующих вашим предпочтениям и бюджету.
+
+</div>
+
+</div>
+
+</div>
+<div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Реинвентаризация Гардероба</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+Если вы хотите освежить свой гардероб и избавиться от ненужных вещей, наши стилисты помогут вам сделать пересмотр и реорганизацию вашей одежды, чтобы каждый элемент приносил радость и стиль.
+</div>
+
+</div>
+
+</div>
+<div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Экологически Устойчивая Мода
+</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+FashionFusion предоставляет экологически дружественные модные решения. Мы поддерживаем устойчивые бренды и помогаем вам выбирать товары, которые помогут уменьшить ваш экологический след.
+</div>
+
+</div>
+
+</div>
+<div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Сотрудничество с Модными Брендами
+</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+Мы сотрудничаем с лучшими модными брендами и дизайнерами, чтобы предоставить вам доступ к последним модным тенденциям и эксклюзивным коллекциям.
+</div>
+
+</div>
+
+</div>
+{% for i in data %}
+    <div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">{{ i.name }}
+</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+{{ i.body }}
+</div>
+
+</div>
+
+</div>
+{% endfor %}
+</div>
+</div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

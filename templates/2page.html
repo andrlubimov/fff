@@ -1,0 +1,84 @@
+{% extends 'adminlte/base.html' %}
+{% load static %}
+
+{% block content %}
+    
+
+<div class="row">
+<div class="col-md-3">
+<div class="card card-primary">
+<div class="card-header">
+<h3 class="card-title">Товар1</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+ <img src="{%static 'admin-lte/dist/img/p1.jpg' %}" alt="AdminLTE Logo" class="brand-image img-fluid elevation-3" style="opacity: .8">
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+<div class="card card-success">
+<div class="card-header">
+<h3 class="card-title">Товар2</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+<img src="{%static 'admin-lte/dist/img/p2.jpg' %}" alt="AdminLTE Logo" class="brand-image img-fluid elevation-3" style="opacity: .8">
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+<div class="card card-info">
+<div class="card-header">
+<h3 class="card-title">Товар3</h3>
+<div class="card-tools">
+<button type="button" class="btn btn-tool" data-card-widget="collapse">
+<i class="fas fa-minus"></i>
+</button>
+</div>
+
+</div>
+
+<div class="card-body">
+<img src="{%static 'admin-lte/dist/img/p3.jpg' %}" alt="AdminLTE Logo" class="brand-image img-fluid elevation-3" style="opacity: .8">
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+<div class="card card-danger">
+<div class="card-header">
+<h3 class="card-title">Товар4</h3>
+</div>
+<div class="card-body">
+<img src="{%static 'admin-lte/dist/img/p4.jpg' %}" alt="AdminLTE Logo" class="brand-image img-fluid elevation-3" style="opacity: .8">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+{% endblock %}

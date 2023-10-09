@@ -1,0 +1,88 @@
+{% extends 'adminlte/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- Default box -->
+    <div class="bg-image">
+        <div class="box-header with-border">
+            <h3 class="box-title"></h3>
+
+        </div>
+            <div class="text-center">
+        <h1>Добро пожаловать на FashionFusion</h1>
+        <p>Мы создаем стильные образы для вас!</p>
+    </div>
+        <div class="text-center">
+         <img src="{%static 'admin-lte/dist/img/fflogo.png' %}" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+            <div class="small-box bg-info">
+<div class="inner">
+    <div class="text-center">
+        <br>
+            <h3>Продукция</h3>
+        <br>
+    </div>
+</div>
+<div class="icon">
+<i class="ion ion-bag"></i>
+</div>
+<a href="/page2/" class="small-box-footer">К разделу <i class="fas fa-arrow-circle-right"></i></a>
+</div>
+            </div>
+            <div class="col-lg-6 col-12">
+            <div class="small-box bg-success">
+<div class="inner">
+    <div class="text-center">
+        <br>
+            <h3>О компании</h3>
+        <br>
+    </div>
+</div>
+<div class="icon">
+<i class="ion ion-bag"></i>
+</div>
+<a href="/page3/" class="small-box-footer">К разделу  <i class="fas fa-arrow-circle-right"></i></a>
+</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+            <div class="small-box bg-primary">
+<div class="inner">
+    <div class="text-center">
+        <br>
+            <h3>Услуги</h3>
+        <br>
+    </div>
+</div>
+<div class="icon">
+<i class="ion ion-bag"></i>
+</div>
+<a href="/page4/" class="small-box-footer">К разделу  <i class="fas fa-arrow-circle-right"></i></a>
+</div>
+            </div>
+            <div class="col-lg-6 col-12">
+            <div class="small-box bg-danger">
+<div class="inner">
+    <div class="text-center">
+        <br>
+            <h3>Контакты</h3>
+        <br>
+    </div>
+</div>
+<div class="icon">
+<i class="ion ion-bag"></i>
+</div>
+<a href="/page5/" class="small-box-footer">К разделу  <i class="fas fa-arrow-circle-right"></i></a>
+</div>
+            </div>
+        </div>
+        <!-- /.box-footer-->
+    </div>
+    <!-- /.box -->
+{% endblock %}
